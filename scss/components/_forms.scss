@@ -1,0 +1,21 @@
+// Forms
+
+.form__label--hidden {
+  display: none;
+}
+
+.form__input,
+.theme__colors {
+  width: 100%;
+  border: 0;
+  padding: .85em;
+  font-size: .85em;
+  margin-bottom: 1.5em;
+}
+
+.form__input {
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+  border-bottom: $color-primary solid 5.5px;
+}

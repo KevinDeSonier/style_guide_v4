@@ -1,0 +1,12 @@
+.container {
+  font-family: $stack-sans;
+}
+
+.blockquote {
+  border-radius: .25em;
+  border-left: $color-primary solid 10px;
+  padding-left: 1em;
+  font-size: 1.444em;
+  font-style: italic;
+  margin-bottom: 3em;
+}

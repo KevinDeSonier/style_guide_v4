@@ -1,0 +1,91 @@
+// Flexbox (grid) layouts
+
+.grid__row {
+  padding: 2em 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $break-comp) {
+    padding: 1em 0;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+[class^="grid"] {
+  width: 100%;
+  flex-basis: 0;
+  @media (min-width: $break-comp) {
+    width: auto;
+  }
+}
+
+.theme__colors {
+  border-radius: 5px;
+  &[class^="grid"] {
+    font-weight: 400;
+    margin-bottom: .5em;
+    flex: 1 0;
+    @media (min-width: $break-comp) {
+      margin: .5em;
+      text-align: center;
+    }
+    &:last-child {
+      margin-bottom: -1.6em;
+      @media (min-width: $break-comp) {
+        margin-bottom: .5em;
+      }
+    }
+  }
+  &.grid__col--12 {
+    @include flex-theme($color-vary-a, 12);
+  }
+  &.grid__col--8 {
+    @include flex-theme($color-vary-b, 8);
+  }
+  &.grid__col--7 {
+    @include flex-theme($color-vary-c, 7);
+  }
+  &.grid__col--6 {
+    @include flex-theme($color-vary-d, 6);
+  }
+  &.grid__col--5 {
+    @include flex-theme($color-vary-e, 5);
+  }
+  &.grid__col--4 {
+    @include flex-theme($color-vary-f, 4);
+  }
+  &.grid__col--3 {
+    @include flex-theme($color-vary-g, 3);
+  }
+}
+
+.grid__col--12 {
+  @include flex-center(12);
+  @media (min-width: $break-comp) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.grid__col--9 {
+  @include flex-center(9);
+}
+.grid__col--8 {
+  @include flex-center(8);
+}
+.grid__col--7 {
+  @include flex-center(7);
+}
+.grid__col--6 {
+  @include flex-center(6);
+}
+.grid__col--5 {
+  @include flex-center(5);
+}
+.grid__col--4 {
+  @include flex-center(4);
+}
+.grid__col--3 {
+  @include flex-center(3);
+}

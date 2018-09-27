@@ -1,0 +1,25 @@
+// Images
+
+.img--logo,
+.img--avatar {
+  display: block;
+  margin: 0 auto 3em;
+  @media (min-width: $break-comp) {
+    margin: 0 auto;
+  }
+}
+
+.img--avatar {
+  margin: 1em auto;
+}
+
+.img--frame {
+  width: 100%;
+  border: .5px solid rgba($color-main-text, .5);
+  padding: 14px;
+  @media (min-width: $break-comp) {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+  }
+}

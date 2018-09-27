@@ -1,0 +1,28 @@
+// Navigation
+
+.nav {
+  @media (min-width: $break-comp) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.nav__item {
+  border-radius: .5em;
+  padding: 1em 0;
+  a {
+    color: $color-main-text;
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: $color-primary;
+    a {
+      color: white;
+    }
+  }
+  @media (min-width: $break-comp) {
+      padding: .5em;
+      margin: 0 .5em;
+  }
+}

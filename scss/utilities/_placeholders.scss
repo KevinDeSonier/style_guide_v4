@@ -1,0 +1,26 @@
+// Headline
+
+.headline--primary,
+.grid__row .headline--secondary {
+  margin-left: 1em;
+}
+
+.headline--primary {
+  color: $color-primary;
+  font-size: 1.778em;
+}
+
+.headline--secondary {
+  margin-top: 0;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+
+// Link
+
+.link {
+  color: $color-secondary;
+  font-weight: 400;
+  text-decoration: none;
+}

@@ -1,0 +1,33 @@
+// Buttons
+
+[class^="btn--"] {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  .grid__col--12 & {
+    @media (min-width: $break-comp) {
+      width: auto;
+      padding: .85em 5.5%;
+    }
+  }
+}
+
+.btn--default {
+  background-color: $color-secondary;
+}
+
+.btn--error {
+  background-color: $color-error;
+}
+
+.btn--success {
+  background-color: $color-success;
+}
+
+.btn--warning {
+  background-color: $color-warn;
+}
+
+.btn--info {
+  background-color: $color-info;
+}
