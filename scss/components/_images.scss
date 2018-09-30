@@ -4,7 +4,7 @@
 .img--avatar {
   display: block;
   margin: 0 auto 3em;
-  @media (min-width: $break-comp) {
+  @include mq(comp) {
     margin: 0 auto;
   }
 }
@@ -17,7 +17,7 @@
   width: 100%;
   border: .5px solid rgba($color-main-text, .5);
   padding: 14px;
-  @media (min-width: $break-comp) {
+  @include mq(comp) {
     display: block;
     margin: 0 auto;
     width: auto;

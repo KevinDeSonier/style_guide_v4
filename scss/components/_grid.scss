@@ -6,7 +6,7 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  @media (min-width: $break-comp) {
+  @include mq(comp) {
     padding: 1em 0;
     flex-direction: row;
     justify-content: flex-start;
@@ -16,7 +16,7 @@
 [class^="grid"] {
   width: 100%;
   flex-basis: 0;
-  @media (min-width: $break-comp) {
+  @include mq(comp) {
     width: auto;
   }
 }
@@ -27,13 +27,13 @@
     font-weight: 400;
     margin-bottom: .5em;
     flex: 1 0;
-    @media (min-width: $break-comp) {
+    @include mq(comp) {
       margin: .5em;
       text-align: center;
     }
     &:last-child {
       margin-bottom: -1.6em;
-      @media (min-width: $break-comp) {
+      @include mq(comp) {
         margin-bottom: .5em;
       }
     }
@@ -63,7 +63,7 @@
 
 .grid__col--12 {
   @include flex-center(12);
-  @media (min-width: $break-comp) {
+  @include mq(comp) {
     display: flex;
     justify-content: space-around;
   }

@@ -5,7 +5,7 @@
   color: white;
   text-transform: uppercase;
   .grid__col--12 & {
-    @media (min-width: $break-comp) {
+    @include mq(comp) {
       width: auto;
       padding: .85em 5.5%;
     }

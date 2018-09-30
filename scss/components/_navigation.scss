@@ -1,7 +1,7 @@
 // Navigation
 
 .nav {
-  @media (min-width: $break-comp) {
+  @include mq(comp) {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -21,7 +21,7 @@
       color: white;
     }
   }
-  @media (min-width: $break-comp) {
+  @include mq(comp) {
       padding: .5em;
       margin: 0 .5em;
   }
